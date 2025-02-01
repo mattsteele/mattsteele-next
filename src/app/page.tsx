@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -8,38 +8,13 @@ export default function Home() {
        <h2 className="text-4xl">Software Engineer</h2>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="about"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          About
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="/resume"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.linkedin.com/in/mattwsteele"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://westerncode.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Western Code
-        </a>
+        <Link className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="/about" rel="noopener noreferrer">About</Link>
+
+        <Link className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="/resume" rel="noopener noreferrer">Resume</Link>
+
+        <Link className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="https://www.linkedin.com/in/mattwsteele" rel="noopener noreferrer">LinkedIn</Link>
+
+        <Link className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="/westerncode" rel="noopener noreferrer">Western Code</Link>
       </footer>
     </div>
   );
