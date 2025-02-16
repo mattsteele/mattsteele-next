@@ -3,15 +3,27 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="flex flex-col w-full">
-      <Link className="flex w-full justify-center py-2.5 uppercase items-center border-b-2 border-solid hover:underline hover:underline-offset-4 bg-red-two" href="/" rel="noopener noreferrer">Home</Link>
 
-      <Link className="flex w-full justify-center py-2.5 uppercase items-center border-b-2 border-solid hover:underline hover:underline-offset-4 bg-red-one" href="/about" rel="noopener noreferrer">About</Link>
+    <div className="bg-red-two border-b-4 border-solid border-transparent hover:border-b-amber-400">
+      <Link className="flex w-full justify-center py-2.5 uppercase items-center no-underline" href="/" rel="noopener noreferrer">Home</Link>
+    </div>
 
-      <Link className="flex w-full justify-center py-2.5 uppercase items-center border-b-2 border-solid hover:underline hover:underline-offset-4 bg-blue-two" href="/resume" rel="noopener noreferrer">Resume</Link>
+    <div className="bg-red-one border-b-4 border-solid border-transparent hover:border-b-amber-400">
+      <Link className="flex w-full justify-center py-2.5 uppercase items-center " href="/about" rel="noopener noreferrer">About</Link>
+    </div>
 
-      <Link className="flex w-full justify-center py-2.5 uppercase items-center border-b-2 border-solid hover:underline hover:underline-offset-4 bg-blue-one" href="https://www.linkedin.com/in/mattwsteele" rel="noopener noreferrer">LinkedIn</Link>
+    <div className="bg-blue-two border-b-4 border-solid border-transparent hover:border-b-amber-400">
+      <Link className="flex w-full justify-center py-2.5 uppercase items-center" href="/resume" rel="noopener noreferrer">Resume</Link>
+    </div>
 
-      <Link className="flex w-full justify-center py-2.5 uppercase items-center border-b-2 border-solid hover:underline hover:underline-offset-4 bg-gray-two" href="https://westerncode.com" rel="noopener noreferrer">Western Code</Link>
+    <div className="bg-blue-one border-b-4 border-solid border-transparent hover:border-b-amber-400">
+      <Link className="flex w-full justify-center py-2.5 uppercase items-center " href="https://www.linkedin.com/in/mattwsteele" rel="noopener noreferrer">LinkedIn</Link>
+    </div>
+
+    <div className="bg-gray-two border-b-4 border-solid border-transparent hover:border-b-amber-400">
+      <Link className="flex w-full justify-center py-2.5 uppercase items-center" href="https://westerncode.com" rel="noopener noreferrer">Western Code</Link>
+    </div>
+
     </footer>
   );
 }
