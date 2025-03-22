@@ -1,4 +1,3 @@
-import Footer from '../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -32,7 +31,7 @@ export default function About() {
 
           <div>
             <Image
-              src="/images/mattsteele-signature.png"
+              src="/images/signature.png"
               width={100}
               height={34}
               alt="Matt Steele Signature"
@@ -41,10 +40,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-
-
-      <Footer />
     </>
   );
 }

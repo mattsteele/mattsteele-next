@@ -1,4 +1,3 @@
-import Footer from '../app/components/footer';
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
           <h2 className="text-4xl text-blue-one text-left">Software Engineer</h2>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
