@@ -106,8 +106,7 @@ export default function Resume() {
           <main className="container mx-auto px-6 pb-12 flex-grow">
             <section id="section-introduction" className="mb-12">
               <p className="text-lg leading-relaxed">
-                I’m a Software Engineer with 10 years of experience. I create web applications with JavaScript (Vue, Angular, Node, etc.).
-                I build design systems, prototypes, and proof-of-concept work. My work encompasses front-end architecture, backend API’s & AWS.
+                Experienced Software Engineer with 10+ years of expertise in building scalable web applications, design systems, and enhancing developer experience (DX). Proficient in JavaScript, React, and Angular with a strong focus on front-end architecture, backend APIs, and AWS. Skilled in delivering end-to-end solutions, including eCommerce platforms, developer tooling, and client-facing applications.
               </p>
             </section>
 
@@ -132,8 +131,7 @@ export default function Resume() {
                       </p>
                     </div>
                     <p className="text-lg leading-relaxed">
-                      As part of the Design Enablement Team I create JavaScript based prototypes, proof-of-concept applications & design systems work.
-                      My work encompasses front-end architecture, backend API’s, and work in AWS.
+                      At Charter I contribute to the Design Systems Engineering Team by developing and maintaining scalable libraries and tools in JavaScript, React, and Angular. I develop solutions using design tokens, iconography, and individual components to enhance the developer experience and streamline application development.
                     </p>
                   </article>
                 </li>
@@ -155,9 +153,7 @@ export default function Resume() {
                       </p>
                     </div>
                     <p className="text-lg leading-relaxed">
-                      At Clover I created client-facing applications in JavaScript & PHP backed by Craft & Statamic CMS’s.
-                      I saw the entire client lifecycle from initial UX design & flows to training clients on CMS usage.
-                      My work included developing eCommerce sites & associated payment & user flows.
+                      Developed client-facing applications using JavaScript and PHP, integrated with Craft and Statamic CMS platforms. Led the full client lifecycle, from UX design and workflows to CMS training. Delivered eCommerce solutions, including payment systems and user flow optimizations.
                     </p>
                   </article>
                 </li>
@@ -179,8 +175,7 @@ export default function Resume() {
                       </p>
                     </div>
                     <p className="text-lg leading-relaxed">
-                      At Brand Iron I led a small team creating websites for clients in a variety of industries.
-                      I was responsible for front-end & back-end operations & maintenance.
+                      Led a team to design and develop websites for clients across various industries. Managed front-end and back-end development, ensuring seamless operations and ongoing maintenance.
                     </p>
                   </article>
                 </li>
