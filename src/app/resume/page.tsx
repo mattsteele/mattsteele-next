@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Resume() {
   return (
     <>
-      <div role="document" className="flex bg-gray-100 text-gray-900 font-sans min-h-screen">
+      <div role="document" className="flex bg-gray-100 text-gray-900 font-sans">
 
         <div className="left-content basis-2xs bg-[var(--color-blue-five)] text-white w-1/4 p-6">
           <aside className="sidebar">
@@ -19,20 +19,25 @@ export default function Resume() {
                     style={{ filter: 'invert(1)' }}
                   />
                 </a>
-                <button className="actions__btn js-print utl-screen-only has-tooltip" aria-label="Print Résumé">
-                  <Image
-                    className="icon icon--print"
-                    src="/icons/print.svg"
-                    width="24"
-                    height="24"
-                    alt="Print Resume"
-                    style={{ filter: 'invert(1)' }}
-                  />
-                </button>
+                {/* The click event is causing an error */}
+                {/* <button
+                  className="actions__btn js-print utl-screen-only has-tooltip"
+                  aria-label="Print Résumé"
+                  onClick={() => window.print()}
+                > 
+                <Image
+                  className="icon icon--print"
+                  src="/icons/print.svg"
+                  width="24"
+                  height="24"
+                  alt="Print Resume"
+                  style={{ filter: 'invert(1)' }}
+                /> 
+                </button> */}
               </div>
             </div>
           </aside>
-        </div>
+        </div >
 
         <div className="right-content">
           <header className="py-12 text-gray-900">
@@ -108,8 +113,8 @@ export default function Resume() {
 
             <section id="section-experience" className="mb-12">
               <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
-              <ol className="space-y-8">
-                <li>
+              <ol className="entrylist space-y-8">
+                <li className="entrylist__item">
                   <article>
                     <div className="mb-4">
                       <h3 className="text-2xl font-semibold">Senior Software Engineer</h3>
@@ -132,7 +137,7 @@ export default function Resume() {
                     </p>
                   </article>
                 </li>
-                <li>
+                <li className="entrylist__item">
                   <article>
                     <div className="mb-4">
                       <h3 className="text-2xl font-semibold">Senior Web Developer</h3>
@@ -156,7 +161,7 @@ export default function Resume() {
                     </p>
                   </article>
                 </li>
-                <li>
+                <li className="entrylist__item">
                   <article>
                     <div className="mb-4">
                       <h3 className="text-2xl font-semibold">Lead Web Developer/UX Designer</h3>
@@ -205,13 +210,13 @@ export default function Resume() {
 
           <footer className="bg-gray-800 text-white py-6">
             <div className="container mx-auto px-6 text-center">
-              <p>© Matt Steele</p>
-              <p>Last updated: 16.06.2021</p>
+              {/* <p>© Matt Steele</p> */}
+              {/* <p>Last updated: 16.06.2021</p> */}
             </div>
           </footer>
         </div>
 
-      </div>
+      </div >
     </>
   );
 }
