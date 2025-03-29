@@ -3,69 +3,116 @@ import Image from 'next/image';
 export default function Resume() {
   return (
     <>
-      <div role="document" className="flex bg-gray-100 text-gray-900 font-sans">
-        <header className="bg-[var(--color-blue-five)] text-white py-8">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center">
-              <div className="mr-6">
-                <Image
-                  src="/images/avatar.png"
-                  width="200"
-                  height="200"
-                  alt="Matt Steele"
-                  className="rounded-full border-4 border-white"
-                />
+      <div role="document" className="flex bg-gray-100 text-gray-900 font-sans min-h-screen">
+
+        <div className="left-content basis-2xs bg-[var(--color-blue-five)] text-white w-1/4 p-6">
+          <aside className="sidebar">
+            <div className="container">
+              <div className="actions">
+                <a className="actions__btn has-tooltip" aria-label="Email" href="mailto:mattsteele@outlook.com">
+                  <Image
+                    className="icon icon--email"
+                    src="/icons/email.svg"
+                    width="24"
+                    height="24"
+                    alt="Email"
+                    style={{ filter: 'invert(1)' }}
+                  />
+                </a>
+                <button className="actions__btn js-print utl-screen-only has-tooltip" aria-label="Print Résumé">
+                  <Image
+                    className="icon icon--print"
+                    src="/icons/print.svg"
+                    width="24"
+                    height="24"
+                    alt="Print Resume"
+                    style={{ filter: 'invert(1)' }}
+                  />
+                </button>
               </div>
-              <div>
-                <h1 className="text-4xl font-bold">Matt Steele</h1>
-                <p className="text-lg mt-2">
-                  <span>Senior Software Engineer</span>
-                  <span className="mx-2" aria-hidden="true">·</span>
-                  <span>Denver, CO</span>
-                </p>
-                <div className="flex items-center mt-4 space-x-4">
-                  <a
-                    aria-label="Email"
-                    href="mailto:mattsteele@outlook.com"
-                    className="flex items-center text-white hover:underline"
-                  >
-                    <Image src="/icons/email.svg" width="24" height="24" alt="Email Icon" />
-                    <span className="ml-2">mattsteele@outlook.com</span>
-                  </a>
-                  <a
-                    aria-label="Website"
-                    href="https://mattsteele.dev"
-                    className="flex items-center text-white hover:underline"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
-                      <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z" />
-                    </svg>
-                    <span className="ml-2">mattsteele.dev</span>
-                  </a>
+            </div>
+          </aside>
+        </div>
+
+        <div className="right-content">
+          <header className="py-12 text-gray-900">
+            <div className="container mx-auto px-6">
+              <div className="flex items-center">
+                <div className="mr-8">
+                  <Image
+                    src="/images/avatar.png"
+                    width="150"
+                    height="150"
+                    alt="Matt Steele"
+                    className="rounded-full border-4 white"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-5xl font-bold">Matt Steele</h1>
+                  <p className="text-xl mt-2">
+                    <span>Senior Software Engineer</span>
+                    <span className="mx-2" aria-hidden="true">·</span>
+                    <span>Denver, CO</span>
+                  </p>
+                  <div className="flex items-center mt-6 space-x-6">
+                    <a
+                      aria-label="Email"
+                      href="mailto:mattsteele@outlook.com"
+                      className="flex items-center text-gray-900 hover:underline"
+                    >
+                      <Image
+                        className="fill-white"
+                        src="/icons/email.svg"
+                        width="20"
+                        height="20"
+                        alt="Email Icon"
+                      />
+                      <span className="ml-2">mattsteele@outlook.com</span>
+                    </a>
+                    <a
+                      aria-label="Website"
+                      href="https://mattsteele.dev"
+                      className="flex items-center text-gray-900 hover:underline"
+                    >
+                      <Image
+                        className="fill-white"
+                        src="/icons/laptop.svg"
+                        width="20"
+                        height="20"
+                        alt="Website Icon"
+                      />
+                      <span className="ml-2">mattsteele.dev</span>
+                    </a>
+                  </div>
+                  <button aria-label="Print Résumé" className="text-gray-900 hover:text-gray-900">
+                    <Image
+                      className="fill-white"
+                      src="/icons/print.svg"
+                      width="24"
+                      height="24"
+                      alt="Print Icon"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-        </header>
+          </header>
 
-        <div className="flex flex-col flex-grow">
-
-          <main className="container mx-auto px-4 py-8">
-            <section id="section-introduction" className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">About Me</h2>
+          <main className="container mx-auto px-6 pb-12 flex-grow">
+            <section id="section-introduction" className="mb-12">
               <p className="text-lg leading-relaxed">
                 I’m a Software Engineer with 10 years of experience. I create web applications with JavaScript (Vue, Angular, Node, etc.).
-                I build prototypes, design systems tooling, and proof-of-concept work. My work encompasses front-end architecture, backend API’s & AWS.
+                I build design systems, prototypes, and proof-of-concept work. My work encompasses front-end architecture, backend API’s & AWS.
               </p>
             </section>
 
-            <section id="section-experience" className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
-              <ol className="space-y-6">
+            <section id="section-experience" className="mb-12">
+              <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
+              <ol className="space-y-8">
                 <li>
                   <article>
-                    <div className="mb-2">
-                      <h3 className="text-xl font-semibold">Senior Software Engineer</h3>
+                    <div className="mb-4">
+                      <h3 className="text-2xl font-semibold">Senior Software Engineer</h3>
                       <p className="text-sm text-gray-600">
                         <time dateTime="2017-10-01">10/2017</time>
                         <span className="mx-1">–</span>
@@ -87,8 +134,8 @@ export default function Resume() {
                 </li>
                 <li>
                   <article>
-                    <div className="mb-2">
-                      <h3 className="text-xl font-semibold">Senior Web Developer</h3>
+                    <div className="mb-4">
+                      <h3 className="text-2xl font-semibold">Senior Web Developer</h3>
                       <p className="text-sm text-gray-600">
                         <time dateTime="2016-05-01">05/2016</time>
                         <span className="mx-1">–</span>
@@ -111,8 +158,8 @@ export default function Resume() {
                 </li>
                 <li>
                   <article>
-                    <div className="mb-2">
-                      <h3 className="text-xl font-semibold">Lead Web Developer/UX Designer</h3>
+                    <div className="mb-4">
+                      <h3 className="text-2xl font-semibold">Lead Web Developer/UX Designer</h3>
                       <p className="text-sm text-gray-600">
                         <time dateTime="2015-01-01">01/2015</time>
                         <span className="mx-1">–</span>
@@ -135,13 +182,13 @@ export default function Resume() {
               </ol>
             </section>
 
-            <section id="section-education" className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Education</h2>
-              <ol className="space-y-4">
+            <section id="section-education" className="mb-12">
+              <h2 className="text-3xl font-bold mb-6">Education</h2>
+              <ol className="space-y-6">
                 <li>
                   <article>
                     <div>
-                      <h3 className="text-xl font-semibold">Bachelor of Fine Arts</h3>
+                      <h3 className="text-2xl font-semibold">Bachelor of Fine Arts</h3>
                       <p className="text-sm text-gray-600">
                         <a href="https://www.academyart.edu/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                           Academy of Art University
@@ -156,25 +203,14 @@ export default function Resume() {
             </section>
           </main>
 
-          <aside className="bg-gray-200 py-4">
-            <div className="container mx-auto px-4 flex justify-between items-center">
-              <a aria-label="Email" href="mailto:mattsteele@outlook.com" className="text-gray-600 hover:text-gray-900">
-                <Image src="/icons/email.svg" width="24" height="24" alt="Email Icon" />
-              </a>
-              <button aria-label="Print Résumé" className="text-gray-600 hover:text-gray-900">
-                <Image src="/icons/print.svg" width="24" height="24" alt="Print Icon" />
-              </button>
-            </div>
-          </aside>
-
-          <footer className="bg-[var(--color-gray-three)] text-white py-4">
-            <div className="container mx-auto px-4 text-center">
+          <footer className="bg-gray-800 text-white py-6">
+            <div className="container mx-auto px-6 text-center">
               <p>© Matt Steele</p>
               <p>Last updated: 16.06.2021</p>
             </div>
           </footer>
-
         </div>
+
       </div>
     </>
   );
