@@ -5,12 +5,14 @@
   --color-blue-two: #507796;
   --color-blue-three: #2a94c8;
   --color-blue-four: #1e2e3e;
+  --color-blue-five: #005b96;
 
   --color-red-one: #b33d40;
   --color-red-two: #d1625b;
 
   --color-gray-one: #e0e0e0;
   --color-gray-two: #bdc3c7;
+  --color-gray-three: #eceeef;
 
   /* #f7f7f9 */
   --color-background: var(--background);
