@@ -32,28 +32,28 @@ export default function Footer() {
       <div className="bg-blue-one relative">
         <Link className="flex w-full justify-center py-2 uppercase items-center no-underline hover:*:w-full" href="https://www.linkedin.com/in/mattwsteele" rel="noopener noreferrer">LinkedIn
           <Image
-            className="self-start pt-0.5"
+            className="self-start pt-0.5 max-w-3"
             src="/icons/external-link.svg"
             width="12"
             height="12"
             alt="External Link Icon"
             style={{ filter: 'invert(1)' }}
           />
-          <span className="bg-gray-300 absolute bottom-0 left-0 block w-0 h-1 transparent transition-width duration-400"></span>
+          <span className="bg-red-one absolute bottom-0 left-0 block w-0 h-1 transparent transition-width duration-400"></span>
         </Link>
       </div>
 
       <div className="bg-gray-two relative">
         <Link className="flex w-full justify-center py-2 uppercase items-center no-underline hover:*:w-full" href="https://westerncode.com" rel="noopener noreferrer">Western Code
           <Image
-            className="self-start pt-0.5"
+            className="self-start pt-0.5 max-w-3"
             src="/icons/external-link.svg"
             width="12"
             height="12"
             alt="External Link Icon"
             style={{ filter: 'invert(1)' }}
           />
-          <span className="bg-gray-300 absolute bottom-0 left-0 block w-0 h-1 transparent transition-width duration-400"></span>
+          <span className="bg-red-one absolute bottom-0 left-0 block w-0 h-1 transparent transition-width duration-400"></span>
         </Link>
       </div>
     </footer>
