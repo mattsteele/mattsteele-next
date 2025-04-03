@@ -105,9 +105,12 @@ export default function Resume() {
 
           <main className="container mx-auto px-6 pb-12 flex-grow">
             <section id="section-introduction" className="mb-12">
-              <p className="text-lg leading-relaxed">
-                Experienced Software Engineer with 10+ years of expertise in building scalable web applications, design systems, and enhancing developer experience (DX). Proficient in JavaScript, React, and Angular with a strong focus on front-end architecture, backend APIs, and AWS. Skilled in delivering end-to-end solutions, including eCommerce platforms, developer tooling, and client-facing applications.
-              </p>
+              <p className="text-lg leading-relaxed">Software Engineer with over a decade of experience in designing and developing scalable web applications, design systems, and developer tools. Proven track record of enhancing developer experience (DX) and streamlining workflows through innovative tooling and libraries.</p>
+              <p className="text-lg leading-relaxed">Proficient in modern JavaScript frameworks such as React and Angular, with a strong emphasis on front-end architecture and seamless integration with backend APIs.</p>
+
+              <p className="text-lg leading-relaxed">Adept at leveraging AWS services to build robust, cloud-native solutions that enhance performance and scalability.</p>
+              <p className="text-lg leading-relaxed">Passionate about improving developer experience (DX) through innovative tooling and streamlined workflows.</p>
+
             </section>
 
             <section id="section-experience" className="mb-12">
@@ -131,7 +134,13 @@ export default function Resume() {
                       </p>
                     </div>
                     <p className="text-lg leading-relaxed">
-                      At Charter I contribute to the Design Systems Engineering Team by developing and maintaining scalable libraries and tools in JavaScript, React, and Angular. I develop solutions using design tokens, iconography, and individual components to enhance the developer experience and streamline application development.
+                      As a member of the Developer Experience team, I specialize in designing and implementing tools and libraries that enhance the productivity and efficiency of internal development teams.
+
+                      My work involves architecting and maintaining scalable solutions using JavaScript, React, and Angular, with a focus on streamlining application development and ensuring consistency across projects.
+
+                      I contribute to improving build processes, optimizing workflows, and creating comprehensive documentation to support developers.
+
+                      Additionally, I have extensive experience in front-end architecture and seamless integration with backend APIs, collaborating closely with cross-functional teams to deliver robust, user-centric solutions that ensure efficient data flow and an exceptional user experience.
                     </p>
                   </article>
                 </li>
