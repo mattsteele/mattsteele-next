@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import PrintButton from '../components/PrintButton';
 
 export default function Resume() {
   return (
@@ -9,31 +10,7 @@ export default function Resume() {
           <aside className="sidebar">
             <div className="container">
               <div className="actions">
-                <a className="actions__btn has-tooltip" aria-label="Email" href="mailto:mattsteele@outlook.com">
-                  <Image
-                    className="icon icon--email"
-                    src="/icons/email.svg"
-                    width="24"
-                    height="24"
-                    alt="Email"
-                    style={{ filter: 'invert(1)' }}
-                  />
-                </a>
-                {/* The click event is causing an error */}
-                {/* <button
-                  className="actions__btn js-print utl-screen-only has-tooltip"
-                  aria-label="Print Résumé"
-                  onClick={() => window.print()}
-                > 
-                <Image
-                  className="icon icon--print"
-                  src="/icons/print.svg"
-                  width="24"
-                  height="24"
-                  alt="Print Resume"
-                  style={{ filter: 'invert(1)' }}
-                /> 
-                </button> */}
+                <PrintButton />
               </div>
             </div>
           </aside>
@@ -89,15 +66,6 @@ export default function Resume() {
                       <span className="ml-2">mattsteele.dev</span>
                     </a>
                   </div>
-                  <button aria-label="Print Résumé" className="text-gray-900 hover:text-gray-900">
-                    <Image
-                      className="fill-white"
-                      src="/icons/print.svg"
-                      width="24"
-                      height="24"
-                      alt="Print Icon"
-                    />
-                  </button>
                 </div>
               </div>
             </div>
@@ -212,10 +180,10 @@ export default function Resume() {
             </section>
           </main>
 
-          <footer className="bg-gray-800 text-white py-6">
-            <div className="container mx-auto px-6 text-center">
+          <footer className="bg-gray-800 text-white py-6 flex">
+            <div className="container mx-auto px-6">
               {/* <p>© Matt Steele</p> */}
-              {/* <p>Last updated: 16.06.2021</p> */}
+              <p>Last updated: 4.4.2025</p>
             </div>
           </footer>
         </div>
